@@ -349,7 +349,7 @@ def main():
     if not hasattr(args, "read_only"):
         args.read_only = False
     if not hasattr(args, "retry_sec"):
-        args.retry_sec = 30
+        args.retry_sec = 60
 
     try:
         validate_args(args)
