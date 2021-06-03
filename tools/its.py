@@ -590,6 +590,19 @@ class ImpfterminService():
             self.log.error(f"Terminpaare können nicht geladen werden: {res.text}")
         return False, res.status_code
 
+    def _notifyMeOnPhone(self, bot_message : str):
+        #Checkout this
+        #https://stackoverflow.com/questions/29003305/sending-telegram-message-from-python
+
+        import requests
+        bot_token = ''
+        bot_chatID = ''
+        send_text = 'https://api.telegram.org/bot' + bot_token + '/sendMessage?chat_id=' + bot_chatID + '&parse_mode=Markdown&text=' + bot_message
+
+        response = requests.get(send_text)
+        print(str(response.json()))
+        pass
+
     @retry_on_failure()
     def termin_buchen(self):
         """Termin wird gebucht für die Kontaktdaten, die beim Starten des
@@ -597,6 +610,12 @@ class ImpfterminService():
 
         :return: bool
         """
+
+        #Added function to notify me on my phone in case appointment cannot be booked automatically.
+        try:
+            self._notifyMeOnPhone('Termin wird jetzt gebucht!')
+        except Exception as e:
+            print(e)
 
         path = "rest/buchung"
 
