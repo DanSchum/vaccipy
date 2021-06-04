@@ -15,6 +15,7 @@ Automatisierte Impfterminbuchung auf [www.impfterminservice.de](https://www.impf
 * Suche bei mehreren Impfzentren gleichzeitig
 * Warteschlange umgehen
 * Dauerhaft Impf-Codes generieren - egal wo, egal für wen!
+* Programmoberfläche (GUI) für einfache Bedienung
 
 **[Wusstest du: Du kannst mit einem Impf-Code in mehreren Impfzentren gleichzeitig nach freien Terminen suchen!](https://github.com/iamnotturner/vaccipy/wiki/Ein-Code-fuer-mehrere-Impfzentren)**
 
@@ -23,7 +24,14 @@ Automatisierte Impfterminbuchung auf [www.impfterminservice.de](https://www.impf
 
 > ⚠️ Google Chrome muss auf dem PC installiert sein (Windows, Mac und Linux)  
 
-Download neuste Version:
+### GUI Version (mit Programmoberfläche)
+
+<a href="https://github.com/iamnotturner/vaccipy/releases/latest/download/vaccipy_gui_installer.exe">
+<img width="60" height="50" src="https://upload.wikimedia.org/wikipedia/de/thumb/c/c2/Microsoft_Windows_7_logo.svg/2000px-Microsoft_Windows_7_logo.svg.png">
+</a>
+
+
+### CLI Version (Kommandozeile)
 
 <a href="https://github.com/iamnotturner/vaccipy/releases/latest/download/vaccipy_installer.exe">
 <img width="60" height="50" src="https://upload.wikimedia.org/wikipedia/de/thumb/c/c2/Microsoft_Windows_7_logo.svg/2000px-Microsoft_Windows_7_logo.svg.png">
@@ -33,8 +41,11 @@ Download neuste Version:
 <img width="90" heigth="30" src=https://logos-world.net/wp-content/uploads/2020/11/Ubuntu-Emblem.png>
 </a></br></br>
 
+
 #### Probleme beim Ausführen des Windows-Installers?
-[Hier kannst du dir das Projekt komprimiert als `.zip` herunterladen.](https://github.com/iamnotturner/vaccipy/releases/latest/download/vaccipy-windows.zip)
+Hier kannst du dir das [Projekt (GUI) komprimiert als `.zip` herunterladen.](https://github.com/iamnotturner/vaccipy/releases/latest/download/vaccipy-windows-gui.zip)
+
+Hier kannst du dir das [Projekt (CLI) komprimiert als `.zip` herunterladen.](https://github.com/iamnotturner/vaccipy/releases/latest/download/vaccipy-windows.zip)
 
 #### Releases
 
@@ -267,9 +278,11 @@ python3 main.py search -f max-mustermann.json
   
   Dies wird auch z.B. auf NixOS benötigt, um eine eigene chromedriver-Installation zu verwenden.
 
+* `VACCIPY_CHROME_BIN`:
+  Name oder relativer Pfad der einer alternativen chrome Programmdatei, die du verwenden möchtest.
+
 Für eine bessere Nutzererfahrung erstellen wir verschiedene Distributionen, die ohne Installation von Python direkt ausgeführt werden können. 
 Die Distributionen können im [neusten Release heruntergeladen werden](https://github.com/iamnotturner/vaccipy/releases/latest).
-
 
 #### [Informationen zu den Distributionen und Shipping findest du hier](https://github.com/iamnotturner/vaccipy/blob/master/docs/distribution.md)
 
