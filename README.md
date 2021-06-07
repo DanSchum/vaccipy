@@ -24,14 +24,14 @@ Automatisierte Impfterminbuchung auf [www.impfterminservice.de](https://www.impf
 
 > ⚠️ Google Chrome muss auf dem PC installiert sein (Windows, Mac und Linux)  
 
-### GUI Version (mit Programmoberfläche)
+### GUI Version (mit Programmoberfläche) [Funktionalitäten: Terminsuche]
 
 <a href="https://github.com/iamnotturner/vaccipy/releases/latest/download/vaccipy_gui_installer.exe">
 <img width="60" height="50" src="https://upload.wikimedia.org/wikipedia/de/thumb/c/c2/Microsoft_Windows_7_logo.svg/2000px-Microsoft_Windows_7_logo.svg.png">
 </a>
 
 
-### CLI Version (Kommandozeile)
+### CLI Version (Kommandozeile) [Funktionalitäten: Terminsuche und Impf-Codes generieren]
 
 <a href="https://github.com/iamnotturner/vaccipy/releases/latest/download/vaccipy_installer.exe">
 <img width="60" height="50" src="https://upload.wikimedia.org/wikipedia/de/thumb/c/c2/Microsoft_Windows_7_logo.svg/2000px-Microsoft_Windows_7_logo.svg.png">
@@ -46,6 +46,15 @@ Automatisierte Impfterminbuchung auf [www.impfterminservice.de](https://www.impf
 Hier kannst du dir das [Projekt (GUI) komprimiert als `.zip` herunterladen.](https://github.com/iamnotturner/vaccipy/releases/latest/download/vaccipy-windows-gui.zip)
 
 Hier kannst du dir das [Projekt (CLI) komprimiert als `.zip` herunterladen.](https://github.com/iamnotturner/vaccipy/releases/latest/download/vaccipy-windows.zip)
+
+### MacOS
+
+Für die Ausführung auf MacOS gibt es bisher noch kein Build, also keine Datei, die man einfach ausführen kann. 
+Um `vaccipy` auf dem Mac auszuführen, musst du den [**Source Code** von `vaccipy` als `.zip` herunterladen](https://github.com/iamnotturner/vaccipy/releases/latest/) und die [notwendigen Requirements](#requirements) installieren. Anschließend kann das [Programm im Terminal](#ausführung-in-der-Kommandozeile) oder in einer beliebigen Python Entwicklungsumgebung ausgeführt werden.
+
+<a href="https://github.com/iamnotturner/vaccipy/releases/latest/">
+<img width="60" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/505px-Apple_logo_black.svg.png">
+</a>
 
 #### Releases
 
@@ -98,7 +107,7 @@ Dazu musst du deinen Impf-Code, die PLZ's deiner gewählten Impfzentren und dein
 die Suche und fragt in regelmäßigen Abständen (alle 60 Sekunden) verfügbare Termine in den gewählten Impfzentren ab.
 
 Sobald ein Termin verfügbar ist, wird dieser direkt mit den Anfangs eingegeben Daten gebucht und die Suche beendet.
-Nach erfolgreicher Buchung erhälst du eine Bestätigungsmail vom Impfterminservice und kannst die Termine auch direkt unter [www.impfterminservice.de](https://www.impfterminservice.de/) einsehen (Bundesland wählen > Impfzentrum wählen > Buchung verwalten).
+Nach erfolgreicher Buchung erhältst du eine Bestätigungsmail vom Impfterminservice und kannst die Termine auch direkt unter [www.impfterminservice.de](https://www.impfterminservice.de/) einsehen (Bundesland wählen > Impfzentrum wählen > Buchung verwalten).
 
 Sollte der gebuchte Termin nicht passen, kannst du ihn einfach wieder stornieren und erneut die Suche beginnen.
 
@@ -118,7 +127,7 @@ Die folgenden Daten werden beim Programmstart benötigt:
 
 `vaccipy` kann neben der Terminbuchung dir auch einen Impf-Code generieren - dauerhaft, für jede Person, in jedem Impfzentrum. 
 Dazu musst du deine Mailadresse, deine Telefonnummer und die PLZ des gewünschten Impfzentrums eintragen. Anschließend fragt `vaccipy` einen Impf-Code
-an und du erhälst eine SMS mit einem Bestätigungscode. Diesen Bestätigungscode kannst du anschließend im Tool eintragen. Der Impf-Code wird dir 
+an und du erhältst eine SMS mit einem Bestätigungscode. Diesen Bestätigungscode kannst du anschließend im Tool eintragen. Der Impf-Code wird dir 
 anschließend per Mail zugesendet.
 
 > Es ist wichtig, dass du den Code entsprechend deiner Altersgruppe auswählst, ansonsten wird dir der Termin vor Ort abgesagt.
@@ -173,8 +182,8 @@ Beim nächsten Start kannst du deine Daten direkt laden und musst sie nicht erne
 
 ## Termin gebucht, was nun?
 
-Nachdem dein Termin erfolgreich gebucht wurde, erhälst du eine Mail, in der du zunächst deine 
-Mail-Adresse bestätigen musst. Nachdem du die Mail bestätigt hast, erhälst du zu jedem Termin 
+Nachdem dein Termin erfolgreich gebucht wurde, erhältst du eine Mail, in der du zunächst deine 
+Mail-Adresse bestätigen musst. Nachdem du die Mail bestätigt hast, erhältst du zu jedem Termin 
 eine Buchungsbestätigung. That's it!
 
 Du kannst alternativ deine Buchung auch im Browser einsehen. Dazu musst du dich auf
